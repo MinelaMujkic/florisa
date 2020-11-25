@@ -5,13 +5,15 @@
         <title>Florisa</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        
+
     </head>
 
     <body>
 
         <div class="row header">
-            Ovo je header
+             Ovo je header
+            <img src="/florisa_logo.png" />
+            
         </div>
 
 
@@ -30,12 +32,12 @@
         <style>
             .header{
                  height: 100px;
-                background-color: blueviolet
+                background-color: rgb(247, 178, 173)
             }
 
             .footer{
             height: 100px;
-            background-color: blueviolet
+            background-color: rgb(247, 178, 173)
             }
         </style>
 
