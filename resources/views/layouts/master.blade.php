@@ -12,7 +12,7 @@
 
         <div class="row header">
              Ovo je header
-            <img src="/florisa_logo.png" />
+            <img src="/florisa_logo.png" height="90px"/>
             
         </div>
 
