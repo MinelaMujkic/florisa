@@ -1,0 +1,34 @@
+.header{
+	background-color:#F0DADF;
+}
+.nav-link {
+    display: block;
+    padding: 1.5rem 2rem;
+}
+.menubar {
+	text-align:center;
+	padding: 12px 23px 9px;
+}
+
+.logo{
+	float:right;
+}
+a {
+    color: #F52757;
+    text-decoration: none;
+	font-size:16px;
+
+}
+
+a:hover{
+	color:white;
+}
+
+.kontakt{
+    float: right;
+}
+
+.naslov{
+    margin-top: 20px;
+    margin-left: 18px;
+}
