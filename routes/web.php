@@ -17,4 +17,10 @@ Route::get('/', function () {
     return view('korisnicki_view.home');
 });
 
-// Route::get("home","App\Http\Controllers\FlorisaController@home");
+Route::get("oNama","App\Http\Controllers\FlorisaController@oNama");
+
+Route::get("cvijetniAranzmani","App\Http\Controllers\FlorisaController@cvijetniAranzmani");
+
+Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@kucnoCvijece");
+
+Route::get("blog","App\Http\Controllers\FlorisaController@blog");
