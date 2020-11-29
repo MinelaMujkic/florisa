@@ -24,3 +24,14 @@ Route::get("cvijetniAranzmani","App\Http\Controllers\FlorisaController@cvijetniA
 Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@kucnoCvijece");
 
 Route::get("blog","App\Http\Controllers\FlorisaController@blog");
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', function () {
+        return view('admin_view.adminHome');
+        
+    });
+
+    Route::get("unesiPonudu","App\Http\Controllers\FlorisaController@unesiPonudu");
+
+    Route::post("store","App\Http\Controllers\FlorisaController@store")->name("store");
+});
