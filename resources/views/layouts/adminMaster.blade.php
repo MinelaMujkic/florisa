@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-md-4">
                 <a href="{{url("admin/")}}">
-                    <img class="logo" src="florisa_logo.png" height="90px">
+                    <img class="logo" src="\florisa_logo.png" height="90px">
                 </a>
             </div>
             <div class="col-md-4 menubar">
@@ -27,19 +27,9 @@
                     {{-- <li class="nav-item">
                         <a class="nav-link" href="{{url("oNama")}}">O nama</a>
                     </li> --}}
-                    {{-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Unesi ponudu
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{url("cvijetniAranzmani")}}">Cvijetni aranžmani</a>
-                            <a class="dropdown-item" href="{{url("kucnoCvijece")}}">Kućno cvijeće</a>
-                        </div>
-                    </li> --}}
-
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url("admin/unesiPonudu")}}">Unesi ponudu</a>
+                        <a class="nav-link" href="{{url("admin/unesiPonudu")}}">Unesi novu ponudu</a>
                     </li>
 
                     <li class="nav-item">
@@ -48,7 +38,7 @@
                 </ul>
             </div>
             <div class="col-md-4">
-                fb i instagram
+                {{-- fb i instagram --}}
             </div>
         </div>
     </div>

@@ -5,7 +5,7 @@
 
     <h2>Unesi novu ponudu</h2>
 
-    <form action="{{route('store')}}" method="POST">
+    <form action="{{route('store')}}" method="POST" enctype="multipart/form-data" >
      
       @csrf
 
@@ -41,7 +41,7 @@
     <div class="form-group">
         <label>Cijena u KM</label>
         {{-- <input type="number" name="cijena_KM" class="form-control"> --}}
-        <input type="text" name="cijena" class="form-control">
+        <input type="number" placeholder="1.0" step="0.01" min="0"  name="cijena" class="form-control">
     </div>
 
     <p>Status</p>
