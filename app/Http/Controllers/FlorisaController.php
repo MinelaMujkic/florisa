@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ponuda;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class FlorisaController extends Controller
 {
@@ -30,7 +31,7 @@ class FlorisaController extends Controller
         return view("admin_view.adminUnesiPonudu");
         }  
         
-        public function store(Request $request){
+    public function store(Request $request){
         //    dd("$request");
             $path = $this->uploadImage($request);
             Ponuda::create([
@@ -43,10 +44,10 @@ class FlorisaController extends Controller
                
     
             ]);
-            return view("admin_view.adminUnesiPonudu");
-            }
+         return view("admin_view.adminUnesiPonudu");
+    }
 
-            private function uploadImage(Request $request) {
+    private function uploadImage(Request $request) {
                 if(!$request->hasFile('slika')) {
                     return response()->json(['upload_file_not_found'], 400);
                 }
@@ -61,6 +62,13 @@ class FlorisaController extends Controller
         
                 $file->move("uploads", $file->getClientOriginalName());
                 return $path;
-            }
+    }
+
+    public function prikazi()
+    {
+      $cvijetniAranzman = Ponuda::where([['kategorija_cvijeca', "=", "1"],["status", "=", "1"]])->get();
+    //   dd("$cvijetniAranzman");
+    }        
+
 
 }

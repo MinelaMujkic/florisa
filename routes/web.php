@@ -34,4 +34,8 @@ Route::prefix('admin')->group(function () {
     Route::get("unesiPonudu","App\Http\Controllers\FlorisaController@unesiPonudu");
 
     Route::post("store","App\Http\Controllers\FlorisaController@store")->name("store");
+
+    Route::get("prikazi","App\Http\Controllers\FlorisaController@prikazi");
+
+
 });
