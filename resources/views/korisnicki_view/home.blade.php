@@ -12,63 +12,39 @@
             <!-- single slide item -->
             <li>
               <div class="seq-model">
-                <img data-seq src="img/slider/1.jpg" alt="Men slide img" />
+                <img data-seq src="https://image.dnevnik.hr/media/images/1920x1080/Jun2020/61903618-orhideje.jpg" alt="Orhideja" />
               </div>
               <div class="seq-title">
-               <span data-seq>Save Up to 75% Off</span>                
-                <h2 data-seq>Men Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+               <span data-seq>Akcija 20%</span>                
+                <h2 data-seq>Kućno cvijeće</h2>                
+                <p data-seq>Orhideju su divno cvijeće...</p>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči </a>
               </div>
             </li>
             <!-- single slide item -->
             <li>
               <div class="seq-model">
-                <img data-seq src="img/slider/2.jpg" alt="Wristwatch slide img" />
+                <img data-seq src="https://a-static.besthdwallpaper.com/calla-lily-yellow-white-and-red-wallpaper-2880x1620-53198_52.jpg" alt="Kale" />
               </div>
               <div class="seq-title">
-                <span data-seq>Save Up to 40% Off</span>                
-                <h2 data-seq>Wristwatch Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                <span data-seq>Uštedi do 40%</span>                
+                <h2 data-seq>Kućno cvijeće i cvijetni aranžmani </h2>                
+                <p data-seq>Kale su lijepo cvijeće...</p>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči </a>
               </div>
             </li>
             <!-- single slide item -->
             <li>
               <div class="seq-model">
-                <img data-seq src="img/slider/3.jpg" alt="Women Jeans slide img" />
+                <img data-seq src="https://cvjecarnicavesna.com/wp-content/uploads/2013/03/76f7474ad61fbf539b883fd29f4e080d.png" alt="Aranžman" />
               </div>
               <div class="seq-title">
                 <span data-seq>Save Up to 75% Off</span>                
                 <h2 data-seq>Jeans Collection</h2>                
                 <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči</a>
               </div>
-            </li>
-            <!-- single slide item -->           
-            <li>
-              <div class="seq-model">
-                <img data-seq src="img/slider/4.jpg" alt="Shoes slide img" />
-              </div>
-              <div class="seq-title">
-                <span data-seq>Save Up to 75% Off</span>                
-                <h2 data-seq>Exclusive Shoes</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-              </div>
-            </li>
-            <!-- single slide item -->  
-             <li>
-              <div class="seq-model">
-                <img data-seq src="img/slider/5.jpg" alt="Male Female slide img" />
-              </div>
-              <div class="seq-title">
-                <span data-seq>Save Up to 50% Off</span>                
-                <h2 data-seq>Best Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-              </div>
-            </li>                   
+            </li>                 
           </ul>
         </div>
         <!-- slider navigation btn -->

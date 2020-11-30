@@ -95,20 +95,12 @@
                 <!-- / currency -->
                 <!-- start cellphone -->
                 <div class="cellphone hidden-xs">
-                  <p><span class="fa fa-phone"></span>00-62-658-658</p>
+                  <p><span class="fa fa-phone"></span>035/123-456</p>
                 </div>
                 <!-- / cellphone -->
               </div>
               <!-- / header top left -->
-              <div class="aa-header-top-right">
-                <ul class="aa-head-top-nav-right">
-                  <li><a href="account.html">Moj račun</a></li>
-                  <li class="hidden-xs"><a href="wishlist.html">Omiljeni</a></li>
-                  <li class="hidden-xs"><a href="cart.html">Košarica</a></li>
-                  <li class="hidden-xs"><a href="checkout.html">Provjera</a></li>
-                  <li><a href="" data-toggle="modal" data-target="#login-modal">Prijava</a></li>
-                </ul>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -125,19 +117,19 @@
               <!-- logo  -->
               <div class="aa-logo">
                 <!-- Text based logo -->
-                <a href="index.html">
-                  <span class="fa fa-shopping-cart"></span>
-                  <p>cvijetni Shop<strong>Florisa</strong> <span>Vaš Online Partner</span></p>
+               
+                  
+                  <p><a href="florisa_logo.png"><img src="florisa_logo.png" alt="florisa_logo.png"></a><br><strong>cvijetni Shop</strong> <span>Vaš Online Partner</span></p>
                 </a>
                 <!-- img based logo -->
-                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                <!-- <a href="florisa_logo.png"><img src="florisa_logo.png" alt="florisa_logo.png"></a> --> 
               </div>
               <!-- / logo  -->
                <!-- cart box -->
               <div class="aa-cartbox">
                 <a class="aa-cart-link" href="#">
                   <span class="fa fa-shopping-basket"></span>
-                  <span class="aa-cart-title">SHOPPING kartica</span>
+                  <span class="aa-cart-title">Moja košarica</span>
                   <span class="aa-cart-notify">2</span>
                 </a>
                 <div class="aa-cartbox-summary">
@@ -151,9 +143,9 @@
                       <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
                     </li>
                     <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg" alt="img"></a>
+                      <a class="aa-cartbox-img" href="#"><img src="#" alt="img"></a>
                       <div class="aa-cartbox-info">
-                        <h4><a href="#">Product Name</a></h4>
+                        <h4><a href="#">Naziv proizvoda</a></h4>
                         <p>1 x $250</p>
                       </div>
                       <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
@@ -167,14 +159,14 @@
                       </span>
                     </li>
                   </ul>
-                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Pogledaj</a>
                 </div>
               </div>
               <!-- / cart box -->
               <!-- search box -->
               <div class="aa-search-box">
                 <form action="">
-                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                  <input type="text" name="" id="" placeholder="Pretraga ">
                   <button type="submit"><span class="fa fa-search"></span></button>
                 </form>
               </div>
@@ -239,52 +231,38 @@
             <div class="row">
               <div class="col-md-3 col-sm-6">
                 <div class="aa-footer-widget">
-                  <h3>Main Menu</h3>
+                  <h3>Glavni meni</h3>
                   <ul class="aa-footer-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our Services</a></li>
-                    <li><a href="#">Our Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Početna</a></li>
+                    <li><a href="{{route('cvijetniAranzmani')}}">Cvijetni aranžmani</a></li>
+                    <li><a href="{{route('kucnoCvijece')}}">Kućno cvijeće</a></li>
+                    <li><a href="{{route('blog')}}">Blog</a></li>
+                    <li><a href="{{route('kontakt')}}">Kontakt</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-md-3 col-sm-6">
                 <div class="aa-footer-widget">
                   <div class="aa-footer-widget">
-                    <h3>Knowledge Base</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Delivery</a></li>
-                      <li><a href="#">Returns</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Discount</a></li>
-                      <li><a href="#">Special Offer</a></li>
-                    </ul>
+                    
                   </div>
                 </div>
               </div>
               <div class="col-md-3 col-sm-6">
                 <div class="aa-footer-widget">
                   <div class="aa-footer-widget">
-                    <h3>Useful Links</h3>
-                    <ul class="aa-footer-nav">
-                      <li><a href="#">Site Map</a></li>
-                      <li><a href="#">Search</a></li>
-                      <li><a href="#">Advanced Search</a></li>
-                      <li><a href="#">Suppliers</a></li>
-                      <li><a href="#">FAQ</a></li>
-                    </ul>
+                    <!--<p><strong>Sva prava zadržana</strong></p>-->
                   </div>
                 </div>
               </div>
               <div class="col-md-3 col-sm-6">
                 <div class="aa-footer-widget">
                   <div class="aa-footer-widget">
-                    <h3>Contact Us</h3>
+                    <h3>Kontaktirajte nas</h3>
                     <address>
-                      <p> 25 Astor Pl, NY 10003, USA</p>
-                      <p><span class="fa fa-phone"></span>+1 212-982-4589</p>
-                      <p><span class="fa fa-envelope"></span>dailyshop@gmail.com</p>
+                      <p> Oktobarska bb, 75000 Tuzla</p>
+                      <p><span class="fa fa-phone"></span>+387 35 123 456</p>
+                      <p><span class="fa fa-envelope"></span>florisa@gmail.com</p>
                     </address>
                     <div class="aa-footer-social">
                       <a href="#"><span class="fa fa-facebook"></span></a>
@@ -307,12 +285,9 @@
         <div class="row">
         <div class="col-md-12">
           <div class="aa-footer-bottom-area">
-            <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a>. Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a></p>
+            <p>Sva prava zadržana <strong>Florisa</strong></a> 2020</p>
             <div class="aa-footer-payment">
-              <span class="fa fa-cc-mastercard"></span>
-              <span class="fa fa-cc-visa"></span>
-              <span class="fa fa-paypal"></span>
-              <span class="fa fa-cc-discover"></span>
+              
             </div>
           </div>
         </div>
@@ -328,17 +303,17 @@
       <div class="modal-content">                      
         <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4>Login or Register</h4>
+          <h4>Prijava ili registracija</h4>
           <form class="aa-login-form" action="">
-            <label for="">Username or Email address<span>*</span></label>
-            <input type="text" placeholder="Username or email">
-            <label for="">Password<span>*</span></label>
-            <input type="password" placeholder="Password">
-            <button class="aa-browse-btn" type="submit">Login</button>
-            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
-            <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+            <label for="">Korisničko ime ili email adresa<span>*</span></label>
+            <input type="text" placeholder="Korisničko ime ili email adresa">
+            <label for="">Lozinka<span>*</span></label>
+            <input type="password" placeholder="Lozinka">
+            <button class="aa-browse-btn" type="submit">Prijava</button>
+            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Zapamti me </label>
+            <p class="aa-lost-password"><a href="#">Da li ste zaboravili lozinku?</a></p>
             <div class="aa-register-now">
-              Don't have an account?<a href="account.html">Register now!</a>
+              Nemate račun<a href="account.html">Registrujte se!</a>
             </div>
           </form>
         </div>                        
