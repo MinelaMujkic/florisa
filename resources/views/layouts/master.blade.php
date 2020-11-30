@@ -224,6 +224,8 @@
       </div>       
     </div>
   </section>
+
+  @yield('content')
  
 
   <!-- footer -->  
