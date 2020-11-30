@@ -26,6 +26,10 @@ class FlorisaController extends Controller
     public function blog(){
         return view("korisnicki_view.blog");
         }   
+
+    public function kontakt(){
+        return view("korisnicki_view.kontakt");
+        }
         
     public function unesiPonudu(){
         return view("admin_view.adminUnesiPonudu");
