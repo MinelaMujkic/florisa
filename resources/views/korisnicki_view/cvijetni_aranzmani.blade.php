@@ -3,7 +3,7 @@
 
 
 <!-- menu -->
-<section id="menu">
+{{-- <section id="menu">
     <div class="container">
       <div class="menu-area">
         <!-- Navbar -->
@@ -149,7 +149,7 @@
       </div>
      </div>
    </div>
-  </section>
+  </section> --}}
   <!-- / catg header banner section -->
 
   <!-- product category -->

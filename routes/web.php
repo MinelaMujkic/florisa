@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('korisnicki_view.home');
 });
-
+Route::get("home","App\Http\Controllers\FlorisaController@home")->name("home");
 
 Route::get("oNama","App\Http\Controllers\FlorisaController@oNama");
 

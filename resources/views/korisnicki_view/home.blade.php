@@ -15,10 +15,10 @@
                 <img data-seq src="https://image.dnevnik.hr/media/images/1920x1080/Jun2020/61903618-orhideje.jpg" alt="Orhideja" />
               </div>
               <div class="seq-title">
-               <span data-seq>Akcija 20%</span>                
+               {{-- <span data-seq>Akcija 20%</span>                 --}}
                 <h2 data-seq>Kućno cvijeće</h2>                
-                <p data-seq>Orhideju su divno cvijeće...</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči </a>
+                <p data-seq>Ukras svakog doma...</p>
+                {{-- <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči </a> --}}
               </div>
             </li>
             <!-- single slide item -->
@@ -27,10 +27,10 @@
                 <img data-seq src="https://a-static.besthdwallpaper.com/calla-lily-yellow-white-and-red-wallpaper-2880x1620-53198_52.jpg" alt="Kale" />
               </div>
               <div class="seq-title">
-                <span data-seq>Uštedi do 40%</span>                
+                {{-- <span data-seq>Uštedi do 40%</span>                 --}}
                 <h2 data-seq>Kućno cvijeće i cvijetni aranžmani </h2>                
                 <p data-seq>Kale su lijepo cvijeće...</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči </a>
+                {{-- <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči </a> --}}
               </div>
             </li>
             <!-- single slide item -->
@@ -39,10 +39,10 @@
                 <img data-seq src="https://cvjecarnicavesna.com/wp-content/uploads/2013/03/76f7474ad61fbf539b883fd29f4e080d.png" alt="Aranžman" />
               </div>
               <div class="seq-title">
-                <span data-seq>Save Up to 75% Off</span>                
-                <h2 data-seq>Jeans Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči</a>
+                {{-- <span data-seq>Save Up to 75% Off</span>                 --}}
+                <h2 data-seq>Kreativni cvijetni aranžmani</h2>                
+                <p data-seq>Za svaku priliku....</p>
+                {{-- <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči</a> --}}
               </div>
             </li>                 
           </ul>
@@ -56,7 +56,9 @@
     </div>
   </section>
   <!-- / slider -->
+
   <!-- Start Promo section -->
+{{--   
   <section id="aa-promo">
     <div class="container">
       <div class="row">
@@ -808,10 +810,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- / Products section -->
   <!-- banner section -->
-  <section id="aa-banner">
+  {{-- <section id="aa-banner">
     <div class="container">
       <div class="row">
         <div class="col-md-12">        
@@ -1274,9 +1276,9 @@
                         <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                         <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
                         <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>                            
-                      </div>
+                      </div> --}}
                       <!-- product badge -->
-                      <span class="aa-badge aa-sale" href="#">SALE!</span>
+                      {{-- <span class="aa-badge aa-sale" href="#">SALE!</span>
                     </li>                                                                                   
                   </ul>
                    <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
@@ -1288,7 +1290,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- / popular section -->
   <!-- Support section -->
   <section id="aa-support">
@@ -1332,43 +1334,44 @@
       <div class="row">
         <div class="col-md-12">
           <div class="aa-testimonial-area">
+            <p style="color: aliceblue">Komentari naših zadovoljnih klijenata</p>
             <ul class="aa-testimonial-slider">
               <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-2.jpg" alt="testimonial img">
+                {{-- <img class="aa-testimonial-img" src="img/testimonial-img-2.jpg" alt="testimonial img"> --}}
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
                   <div class="aa-testimonial-info">
                     <p>Allison</p>
-                    <span>Designer</span>
-                    <a href="#">Dribble.com</a>
+                    {{-- <span>Designer</span>
+                    <a href="#">Dribble.com</a> --}}
                   </div>
                 </div>
               </li>
               <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-1.jpg" alt="testimonial img">
+                {{-- <img class="aa-testimonial-img" src="img/testimonial-img-1.jpg" alt="testimonial img"> --}}
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
                   <div class="aa-testimonial-info">
                     <p>KEVIN MEYER</p>
-                    <span>CEO</span>
-                    <a href="#">Alphabet</a>
+                    {{-- <span>CEO</span>
+                    <a href="#">Alphabet</a> --}}
                   </div>
                 </div>
               </li>
                <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-3.jpg" alt="testimonial img">
+                {{-- <img class="aa-testimonial-img" src="img/testimonial-img-3.jpg" alt="testimonial img"> --}}
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
                   <div class="aa-testimonial-info">
                     <p>Luner</p>
-                    <span>COO</span>
-                    <a href="#">Kinatic Solution</a>
+                    {{-- <span>COO</span>
+                    <a href="#">Kinatic Solution</a> --}}
                   </div>
                 </div>
               </li>
@@ -1386,7 +1389,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="aa-latest-blog-area">
-            <h2>LATEST BLOG</h2>
+            <h2>ZADNJE OBJAVE NA BLOGU</h2>
             <div class="row">
               <!-- single latest blog -->
               <div class="col-md-4 col-sm-4">
@@ -1394,9 +1397,9 @@
                   <figure class="aa-blog-img">                    
                     <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
                       <figcaption class="aa-blog-img-caption">
-                      <span href="#"><i class="fa fa-eye"></i>5K</span>
+                      {{-- <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
-                      <a href="#"><i class="fa fa-comment-o"></i>20</a>
+                      <a href="#"><i class="fa fa-comment-o"></i>20</a> --}}
                       <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
                     </figcaption>                          
                   </figure>
@@ -1413,9 +1416,9 @@
                   <figure class="aa-blog-img">                    
                     <a href="#"><img src="img/promo-banner-3.jpg" alt="img"></a>  
                       <figcaption class="aa-blog-img-caption">
-                      <span href="#"><i class="fa fa-eye"></i>5K</span>
+                      {{-- <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
-                      <a href="#"><i class="fa fa-comment-o"></i>20</a>
+                      <a href="#"><i class="fa fa-comment-o"></i>20</a> --}}
                       <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
                     </figcaption>                          
                   </figure>
@@ -1432,9 +1435,9 @@
                   <figure class="aa-blog-img">                    
                     <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
                       <figcaption class="aa-blog-img-caption">
-                      <span href="#"><i class="fa fa-eye"></i>5K</span>
+                      {{-- <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
-                      <a href="#"><i class="fa fa-comment-o"></i>20</a>
+                      <a href="#"><i class="fa fa-comment-o"></i>20</a> --}}
                       <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
                     </figcaption>                          
                   </figure>
@@ -1480,7 +1483,7 @@
   <!-- / Client Brand -->
 
   <!-- Subscribe section -->
-  <section id="aa-subscribe">
+  {{-- <section id="aa-subscribe">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -1495,7 +1498,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> --}}
   <!-- / Subscribe section -->
 
 @endsection

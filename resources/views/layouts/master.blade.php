@@ -63,9 +63,10 @@
           <div class="col-md-12">
             <div class="aa-header-top-area">
               <!-- start header top left -->
-              <div class="aa-header-top-left">
+              {{-- <div class="aa-header-top-left"> --}}
+
                 <!-- start language -->
-                <div class="aa-language">
+                {{-- <div class="aa-language">
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                       <img src="img/flag/english.jpg" alt="english flag">ENGLISH
@@ -76,11 +77,13 @@
                       <li><a href="#"><img src="img/flag/english.jpg" alt="">ENGLISH</a></li>
                     </ul>
                   </div>
-                </div>
+                </div> --}}
+
                 <!-- / language -->
 
                 <!-- start currency -->
-                <div class="aa-currency">
+
+                {{-- <div class="aa-currency">
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                       <i class="fa fa-usd"></i>USD
@@ -91,14 +94,17 @@
                       <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
                     </ul>
                   </div>
-                </div>
+                </div> --}}
+
                 <!-- / currency -->
                 <!-- start cellphone -->
-                <div class="cellphone hidden-xs">
+
+                {{-- <div class="cellphone hidden-xs">
                   <p><span class="fa fa-phone"></span>035/123-456</p>
-                </div>
+                </div> --}}
+
                 <!-- / cellphone -->
-              </div>
+              {{-- </div> --}}
               <!-- / header top left -->
               
             </div>
@@ -125,8 +131,10 @@
                 <!-- <a href="florisa_logo.png"><img src="florisa_logo.png" alt="florisa_logo.png"></a> --> 
               </div>
               <!-- / logo  -->
+
                <!-- cart box -->
-              <div class="aa-cartbox">
+
+              {{-- <div class="aa-cartbox">
                 <a class="aa-cart-link" href="#">
                   <span class="fa fa-shopping-basket"></span>
                   <span class="aa-cart-title">Moja košarica</span>
@@ -161,8 +169,9 @@
                   </ul>
                   <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Pogledaj</a>
                 </div>
-              </div>
+              </div> --}}
               <!-- / cart box -->
+
               <!-- search box -->
               <div class="aa-search-box">
                 <form action="">
@@ -196,7 +205,7 @@
           <div class="navbar-collapse collapse">
             <!-- Left nav -->
             <ul class="nav navbar-nav">
-              <li><a href="#">Početna</a></li>
+              <li><a href="{{route('home')}}">Početna</a></li>
               <li><a href="#">Shop <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
                   <li><a href="{{route('cvijetniAranzmani')}}">Cvijetni aranžmani</a></li>
@@ -233,7 +242,7 @@
                 <div class="aa-footer-widget">
                   <h3>Glavni meni</h3>
                   <ul class="aa-footer-nav">
-                    <li><a href="#">Početna</a></li>
+                    <li><a href="{{route('home')}}">Početna</a></li>
                     <li><a href="{{route('cvijetniAranzmani')}}">Cvijetni aranžmani</a></li>
                     <li><a href="{{route('kucnoCvijece')}}">Kućno cvijeće</a></li>
                     <li><a href="{{route('blog')}}">Blog</a></li>
@@ -297,7 +306,7 @@
   </footer>
   <!-- / footer -->
 
-  <!-- Login Modal -->  
+  <!-- Login Modal  nije uključio-->  
   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">                      
