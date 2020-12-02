@@ -186,14 +186,16 @@
             <div class="aa-product-catg-body">
               <ul class="aa-product-catg">
                 <!-- start single product item -->
+                @foreach($cvijetniAranzman as $item)
+
                 <li>
                   <figure>
-                    <a class="aa-product-img" href="#"><img src="img/women/girl-1.png"></a>
-                    <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
+                    <a class="aa-product-img" href="#"><img src="{{$item->slika}}"></a>
+                    <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Naruči</a>
                     <figcaption>
-                      <h4 class="aa-product-title"><a href="#">This is Title</a></h4>
+                      <h4 class="aa-product-title"><a href="{{$item->naziv}}">This is Title</a></h4>
                       <span class="aa-product-price">$45.50</span>
-                      <p class="aa-product-descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusamus facere iusto, autem soluta amet sapiente ratione inventore nesciunt a, maxime quasi consectetur, rerum illum.</p>
+                      <p class="aa-product-descrip">{{$item->opis}}</p>
                     </figcaption>
                   </figure>                         
                   {{-- <div class="aa-product-hvr-content">
@@ -204,6 +206,8 @@
                   <!-- product badge -->
                   {{-- <span class="aa-badge aa-sale" href="#">SALE!</span> --}}
                 </li>
+
+                @endforeach
                 <!-- start single product item -->
                 <li>
                   <figure>

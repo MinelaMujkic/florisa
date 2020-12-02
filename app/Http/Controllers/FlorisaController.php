@@ -71,7 +71,8 @@ class FlorisaController extends Controller
     public function prikazi()
     {
       $cvijetniAranzman = Ponuda::where([['kategorija_cvijeca', "=", "1"],["status", "=", "1"]])->get();
-    //   dd("$cvijetniAranzman");
+    // dd("$cvijetniAranzman");
+    return view("korisnicki_view/cvijetni_aranzmani", compact("cvijetniAranzman"));
     }        
 
 
