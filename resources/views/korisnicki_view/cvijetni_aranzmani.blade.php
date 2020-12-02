@@ -193,8 +193,8 @@
                     <a class="aa-product-img" href="#"><img src="{{$item->slika}}"></a>
                     <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Naruči</a>
                     <figcaption>
-                      <h4 class="aa-product-title"><a href="{{$item->naziv}}">This is Title</a></h4>
-                      <span class="aa-product-price">$45.50</span>
+                      <h4 class="aa-product-title"><a href="">{{$item->naziv}}</a></h4>
+                      <span class="aa-product-price">{{$item->cijena_KM}}KM</span>
                       <p class="aa-product-descrip">{{$item->opis}}</p>
                     </figcaption>
                   </figure>                         
@@ -209,7 +209,7 @@
 
                 @endforeach
                 <!-- start single product item -->
-                <li>
+                {{-- <li>
                   <figure>
                     <a class="aa-product-img" href="#"><img src="img/women/girl-2.png" alt="polo shirt img"></a>
                     <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
@@ -218,7 +218,7 @@
                       <span class="aa-product-price">$45.50</span>
                        <p class="aa-product-descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusamus facere iusto, autem soluta amet sapiente ratione inventore nesciunt a, maxime quasi consectetur, rerum illum.</p>
                     </figcaption>
-                  </figure>                         
+                  </figure>                          --}}
                   {{-- <div class="aa-product-hvr-content">
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
@@ -226,9 +226,9 @@
                   </div>  --}}
                   <!-- product badge -->
                    {{-- <span class="aa-badge aa-sold-out" href="#">Sold Out!</span> --}}
-                 </li>
+                 {{-- </li> --}}
                 <!-- start single product item -->
-                <li>
+                {{-- <li>
                   <figure>
                     <a class="aa-product-img" href="#"><img src="img/women/girl-3.png" alt="polo shirt img"></a>
                     <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
@@ -237,13 +237,13 @@
                       <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
                        <p class="aa-product-descrip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusamus facere iusto, autem soluta amet sapiente ratione inventore nesciunt a, maxime quasi consectetur, rerum illum.</p>
                     </figcaption>
-                  </figure>                         
+                  </figure>                          --}}
                   {{-- <div class="aa-product-hvr-content">
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                     <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
                     <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
                   </div> --}}
-                </li>
+                {{-- </li> --}}
                 <!-- start single product item -->
                 {{-- <li>
                   <figure>
