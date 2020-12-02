@@ -22,7 +22,8 @@ Route::get("oNama","App\Http\Controllers\FlorisaController@oNama");
 
 Route::get("kontakt","App\Http\Controllers\FlorisaController@kontakt")->name('kontakt');
 
-Route::get("cvijetniAranzmani","App\Http\Controllers\FlorisaController@cvijetniAranzmani")->name('cvijetniAranzmani');
+Route::get("cvijetniAranzmani","App\Http\Controllers\FlorisaController@prikazi")->name('cvijetniAranzmani');
+// Route::get("Aranzmani","App\Http\Controllers\FlorisaController@prikazi");
 
 Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@kucnoCvijece")->name('kucnoCvijece');
 
@@ -38,7 +39,7 @@ Route::prefix('admin')->group(function () {
 
     Route::post("store","App\Http\Controllers\FlorisaController@store")->name("store");
 
-    Route::get("prikazi","App\Http\Controllers\FlorisaController@prikazi");
+    
 
 
 });
