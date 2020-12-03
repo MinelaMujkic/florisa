@@ -1,108 +1,356 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Florisa | cvjetniShop</title>
+    
+    <!-- Font awesome -->
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.css" rel="stylesheet">   
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="/css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <!-- Product view slider -->
+    <link rel="stylesheet" type="text/css" href="/css/jquery.simpleLens.css">    
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="/css/slick.css">
+    <!-- price picker slider -->
+    <link rel="stylesheet" type="text/css" href="/css/nouislider.css">
+    <!-- Theme color -->
+    <link id="switcher" href="/css/theme-color/default-theme.css" rel="stylesheet">
+    <!-- <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet"> -->
+    <!-- Top Slider CSS -->
+    <link href="/css/sequence-theme.modern-slide-in.css" rel="stylesheet" media="all">
 
-<head>
-    <title>Florisa</title>
+    <!-- Main style sheet -->
+    <link href="/css/style.css" rel="stylesheet">    
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="https://cdn.tiny.cloud/1/mypjlpl0ll198jkom1nivwr7g17mj8g5oefvob9eqey6bvy5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    
 
-<link rel="stylesheet" href="/css/florisa.css" type="text/css">
-</head>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
 
-<body>
+  </head>
+  <body> 
+   <!-- wpf loader Two -->
+    <div id="wpf-loader-two">          
+      <div class="wpf-loader-two-inner">
+        <span>Loading</span>
+      </div>
+    </div> 
+    <!-- / wpf loader Two -->       
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
 
-    <div class="header">
+
+  <!-- Start header section -->
+  <header id="aa-header">
+    <!-- start header top  -->
+    <div class="aa-header-top">
+      <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <a href="{{url("admin/")}}">
-                    <img class="logo" src="\florisa_logo.png" height="90px">
-                </a>
-            </div>
-            <div class="col-md-4 menubar">
-                <ul class="nav justify-content-end">
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="{{url("oNama")}}">O nama</a>
-                    </li> --}}
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url("admin/unesiPonudu")}}">Unesi novu ponudu</a>
-                    </li>
+          <div class="col-md-12">
+            <div class="aa-header-top-area">
+              <!-- start header top left -->
+              {{-- <div class="aa-header-top-left"> --}}
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{url("blog")}}">Uredi blog</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                {{-- fb i instagram --}}
-            </div>
-        </div>
-    </div>
-
-
-    <div class="container">
-        @yield('content')
-        {{--  yield ...da nam smjesti sav sadržaj koji ćemo posle definisat...zauzimamo mjesto --}}
-    </div>
-
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12 kontakt">
-                    <h4 class="naslov">Kontakt</h4>
-                    <ul>
-                        <li>
-                            <p><i class="fas fa-map-marker-alt"></i>Adresa: Oktobarska bb Tuzla, 75000 </p>
-                        </li>
-                        <li>
-                            <p><i class="fas fa-phone-square"></i>Telefon: <a href="tel:+387 35 123 456">+387 61 225
-                                    883</a></p>
-                        </li>
-                        <li>
-                            <p><i class="fas fa-envelope"></i>Email: <a
-                                    href="mailto:agronomi@gmail.com">florisa@gmail.com</a></p>
-                        </li>
+                <!-- start language -->
+                {{-- <div class="aa-language">
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <img src="img/flag/english.jpg" alt="english flag">ENGLISH
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#"><img src="img/flag/french.jpg" alt="">FRENCH</a></li>
+                      <li><a href="#"><img src="img/flag/english.jpg" alt="">ENGLISH</a></li>
                     </ul>
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
+                  </div>
+                </div> --}}
 
-                </div>
-                <div class="col-lg-4 col-md-12 col-sm-12">
-                    <div class="footer-link">
-                        <h4 class="naslov">Informacije</h4>
-                        <ul>
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Načini isporuke</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- / language -->
+
+                <!-- start currency -->
+
+                {{-- <div class="aa-currency">
+                  <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      <i class="fa fa-usd"></i>USD
+                      <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#"><i class="fa fa-euro"></i>EURO</a></li>
+                      <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
+                    </ul>
+                  </div>
+                </div> --}}
+
+                <!-- / currency -->
+                <!-- start cellphone -->
+
+                {{-- <div class="cellphone hidden-xs">
+                  <p><span class="fa fa-phone"></span>035/123-456</p>
+                </div> --}}
+
+                <!-- / cellphone -->
+              {{-- </div> --}}
+              <!-- / header top left -->
+              
             </div>
+          </div>
         </div>
+      </div>
     </div>
+    <!-- / header top  -->
 
+    <!-- start header bottom  -->
+    <div class="aa-header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aa-header-bottom-area">
+              <!-- logo  -->
+              <div class="aa-logo">
+                <!-- Text based logo -->
+               
+                  
+                  <p><a href="florisa_logo.png"><img src="/florisa_logo.png" alt="florisa_logo.png"></a><br><strong>cvijetni Shop</strong> <span>Vaš Online Partner</span></p>
+                </a>
+                <!-- img based logo -->
+                <!-- <a href="florisa_logo.png"><img src="florisa_logo.png" alt="florisa_logo.png"></a> --> 
+              </div>
+              <!-- / logo  -->
 
+               <!-- cart box -->
 
-    <style>
-        /* .header{
-                 height: 100px;
-                background-color: rgb(247, 178, 173)
-            }
+              {{-- <div class="aa-cartbox">
+                <a class="aa-cart-link" href="#">
+                  <span class="fa fa-shopping-basket"></span>
+                  <span class="aa-cart-title">Moja košarica</span>
+                  <span class="aa-cart-notify">2</span>
+                </a>
+                <div class="aa-cartbox-summary">
+                  <ul>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Naziv proizvoda</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>
+                    <li>
+                      <a class="aa-cartbox-img" href="#"><img src="#" alt="img"></a>
+                      <div class="aa-cartbox-info">
+                        <h4><a href="#">Naziv proizvoda</a></h4>
+                        <p>1 x $250</p>
+                      </div>
+                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
+                    </li>                    
+                    <li>
+                      <span class="aa-cartbox-total-title">
+                        Ukupno
+                      </span>
+                      <span class="aa-cartbox-total-price">
+                        $500
+                      </span>
+                    </li>
+                  </ul>
+                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Pogledaj</a>
+                </div>
+              </div> --}}
+              <!-- / cart box -->
 
-            .footer{
-            height: 200px;
-            background-color: rgb(247, 178, 173)
-            } */
-    </style>
+              <!-- search box -->
+              <div class="aa-search-box">
+                <form action="">
+                  <input type="text" name="" id="" placeholder="Pretraga ">
+                  <button type="submit"><span class="fa fa-search"></span></button>
+                </form>
+              </div>
+              <!-- / search box -->             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / header bottom  -->
+  </header>
+  <!-- / header section -->
+  <!-- menu -->
+  <section id="menu">
+    <div class="container">
+      <div class="menu-area">
+        <!-- Navbar -->
+        <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>          
+          </div>
+          <div class="navbar-collapse collapse">
+            <!-- Left nav -->
+            <ul class="nav navbar-nav">
+              <li><a href="{{url("admin/unesiPonudu")}}">Unesi novu ponudu</a></li>
+              {{-- <li><a href="#">Shop <span class="caret"></span></a>
+                <ul class="dropdown-menu">                
+                  <li><a href="{{route('cvijetniAranzmani')}}">Cvijetni aranžmani</a></li>
+                  <li><a href="{{route('kucnoCvijece')}}">Kućno cvijeće</a></li>
+                </ul>
+              </li>
+                         
+              <li><a href="blog-archive.html">Blog <span class="caret"></span></a>
+                <ul class="dropdown-menu">                
+                  <li><a href="{{route('blog')}}">Novosti u cvjećarstvu</a></li>                
+                </ul>
+              </li>
+              <li><a href="{{route('kontakt')}}">Kontakt</a></li>
+            </ul> --}}
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>       
+    </div>
+  </section>
 
-    @yield('style')
-    {{-- u view da pišemo css...zauzimamo  mjesto  --}}
+  @yield('content')
+ 
 
-</body>
+  <!-- footer -->  
+  <footer id="aa-footer">
+    <!-- footer bottom -->
+    <div class="aa-footer-top">
+     <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="aa-footer-top-area">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <h3>Glavni meni</h3>
+                  <ul class="aa-footer-nav">
+                    <li><a href="{{route('home')}}">Početna</a></li>
+                    <li><a href="{{route('cvijetniAranzmani')}}">Cvijetni aranžmani</a></li>
+                    <li><a href="{{route('kucnoCvijece')}}">Kućno cvijeće</a></li>
+                    <li><a href="{{route('blog')}}">Blog</a></li>
+                    <li><a href="{{route('kontakt')}}">Kontakt</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <!--<p><strong>Sva prava zadržana</strong></p>-->
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="aa-footer-widget">
+                  <div class="aa-footer-widget">
+                    <h3>Kontaktirajte nas</h3>
+                    <address>
+                      <p> Oktobarska bb, 75000 Tuzla</p>
+                      <p><span class="fa fa-phone"></span>+387 35 123 456</p>
+                      <p><span class="fa fa-envelope"></span>florisa@gmail.com</p>
+                    </address>
+                    <div class="aa-footer-social">
+                      <a href="#"><span class="fa fa-facebook"></span></a>
+                      <a href="#"><span class="fa fa-twitter"></span></a>
+                      <a href="#"><span class="fa fa-google-plus"></span></a>
+                      <a href="#"><span class="fa fa-youtube"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    <!-- footer-bottom -->
+    <div class="aa-footer-bottom">
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="aa-footer-bottom-area">
+            <p>Sva prava zadržana <strong>Florisa</strong></a> 2020</p>
+            <div class="aa-footer-payment">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer -->
 
+  <!-- Login Modal  nije uključio-->  
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">                      
+        <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4>Prijava ili registracija</h4>
+          <form class="aa-login-form" action="">
+            <label for="">Korisničko ime ili email adresa<span>*</span></label>
+            <input type="text" placeholder="Korisničko ime ili email adresa">
+            <label for="">Lozinka<span>*</span></label>
+            <input type="password" placeholder="Lozinka">
+            <button class="aa-browse-btn" type="submit">Prijava</button>
+            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Zapamti me </label>
+            <p class="aa-lost-password"><a href="#">Da li ste zaboravili lozinku?</a></p>
+            <div class="aa-register-now">
+              Nemate račun<a href="account.html">Registrujte se!</a>
+            </div>
+          </form>
+        </div>                        
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div>    
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.js"></script>  
+  <!-- SmartMenus jQuery plugin -->
+  <script type="text/javascript" src="/js/jquery.smartmenus.js"></script>
+  <!-- SmartMenus jQuery Bootstrap Addon -->
+  <script type="text/javascript" src="/js/jquery.smartmenus.bootstrap.js"></script>  
+  <!-- To Slider JS -->
+  <script src="/js/sequence.js"></script>
+  <script src="/js/sequence-theme.modern-slide-in.js"></script>  
+  <!-- Product view slider -->
+  <script type="text/javascript" src="/js/jquery.simpleGallery.js"></script>
+  <script type="text/javascript" src="/js/jquery.simpleLens.js"></script>
+  <!-- slick slider -->
+  <script type="text/javascript" src="/js/slick.js"></script>
+  <!-- Price picker slider -->
+  <script type="text/javascript" src="js/nouislider.js"></script>
+  <!-- Custom js -->
+  <script src="/js/custom.js"></script> 
+
+  </body>
 </html>
