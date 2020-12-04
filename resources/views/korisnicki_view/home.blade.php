@@ -1302,24 +1302,24 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="aa-support-single">
                 <span class="fa fa-truck"></span>
-                <h4>FREE SHIPPING</h4>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.</P>
+                <h4>Dostava</h4>
+                <P>Dostava na kućnu adresu.<br>Besplatna dostava <br>za narudžbe preko 60 KM.</P>
               </div>
             </div>
             <!-- single support -->
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="aa-support-single">
                 <span class="fa fa-clock-o"></span>
-                <h4>30 DAYS MONEY BACK</h4>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.</P>
+                <h4>Povrat novca</h4>
+                <P>Povrat novca u slučaju da kućno cvijeće ugine u periodu od 7 dana od primitka narudžbe.</P>
               </div>
             </div>
             <!-- single support -->
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="aa-support-single">
                 <span class="fa fa-phone"></span>
-                <h4>SUPPORT 24/7</h4>
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, nobis.</P>
+                <h4>Podrška</h4>
+                <P>Za savjete o održavanju pozovite nas svakim radnim danom.</P>
               </div>
             </div>
           </div>
@@ -1341,9 +1341,9 @@
                 <div class="aa-testimonial-single">
                 {{-- <img class="aa-testimonial-img" src="img/testimonial-img-2.jpg" alt="testimonial img"> --}}
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>Zlatne i ljubazne djevojke. Cvijeće uvijek svježe i mirisno, kao da je tek ubrano. Sve pohvale!</p>
                   <div class="aa-testimonial-info">
-                    <p>Allison</p>
+                    <p>Esma</p>
                     {{-- <span>Designer</span>
                     <a href="#">Dribble.com</a> --}}
                   </div>
@@ -1354,9 +1354,9 @@
                 <div class="aa-testimonial-single">
                 {{-- <img class="aa-testimonial-img" src="img/testimonial-img-1.jpg" alt="testimonial img"> --}}
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>Florisa je poseban cvijetni dućan u koji se uvijek vraćam. Moje orhideje uvijek cvjetaju uz podršku ljubaznog osoblja.</p>
                   <div class="aa-testimonial-info">
-                    <p>KEVIN MEYER</p>
+                    <p>Asja</p>
                     {{-- <span>CEO</span>
                     <a href="#">Alphabet</a> --}}
                   </div>
@@ -1367,9 +1367,9 @@
                 <div class="aa-testimonial-single">
                 {{-- <img class="aa-testimonial-img" src="img/testimonial-img-3.jpg" alt="testimonial img"> --}}
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>Ma šta da vam kažem, moja djevojka je oduševljena cvijetnim aranžmanima koje joj poklanjam iz Florise. Kada je ona sretna, sretan sam i ja.</p>
                   <div class="aa-testimonial-info">
-                    <p>Luner</p>
+                    <p>Amin</p>
                     {{-- <span>COO</span>
                     <a href="#">Kinatic Solution</a> --}}
                   </div>
@@ -1406,7 +1406,7 @@
                   <div class="aa-blog-info">
                     <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                    <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
+                    <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>
                   </div>
                 </div>
               </div>
@@ -1425,7 +1425,7 @@
                   <div class="aa-blog-info">
                     <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                     <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>         
+                     <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>         
                   </div>
                 </div>
               </div>
@@ -1444,7 +1444,7 @@
                   <div class="aa-blog-info">
                     <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                    <a href="#" class="aa-read-mor-btn">Read more <span class="fa fa-long-arrow-right"></span></a>
+                    <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>
                   </div>
                 </div>
               </div>

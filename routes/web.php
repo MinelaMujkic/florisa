@@ -29,6 +29,10 @@ Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@kucnoCvijece")
 
 Route::get("blog","App\Http\Controllers\FlorisaController@blog")->name('blog');
 
+Route::get("order","App\Http\Controllers\FlorisaController@order")->name('order');
+
+Route::get("login","App\Http\Controllers\FlorisaController@login")->name('login');
+
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('admin_view.adminHome');

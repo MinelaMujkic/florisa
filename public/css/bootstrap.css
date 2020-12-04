@@ -55,6 +55,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
+  color:pink;
 }
 dfn {
   font-style: italic;

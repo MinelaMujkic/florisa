@@ -118,7 +118,7 @@
     <div class="aa-header-bottom">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-10">
             <div class="aa-header-bottom-area">
               <!-- logo  -->
               <div class="aa-logo">
@@ -132,46 +132,7 @@
               </div>
               <!-- / logo  -->
 
-               <!-- cart box -->
-
-              {{-- <div class="aa-cartbox">
-                <a class="aa-cart-link" href="#">
-                  <span class="fa fa-shopping-basket"></span>
-                  <span class="aa-cart-title">Moja košarica</span>
-                  <span class="aa-cart-notify">2</span>
-                </a>
-                <div class="aa-cartbox-summary">
-                  <ul>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Naziv proizvoda</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="#" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Naziv proizvoda</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>                    
-                    <li>
-                      <span class="aa-cartbox-total-title">
-                        Ukupno
-                      </span>
-                      <span class="aa-cartbox-total-price">
-                        $500
-                      </span>
-                    </li>
-                  </ul>
-                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Pogledaj</a>
-                </div>
-              </div> --}}
-              <!-- / cart box -->
-
+               
               <!-- search box -->
               <div class="aa-search-box">
                 <form action="">
@@ -179,8 +140,21 @@
                   <button type="submit"><span class="fa fa-search"></span></button>
                 </form>
               </div>
-              <!-- / search box -->             
+              <!-- / search box --> 
+              
+              
+
             </div>
+          </div>
+          <div class="col-md-2">
+            <!-- Login -->
+            <ul class="nav navbar-nav">
+              <li><a href="{{route('login')}}"><strong>Prijava<strong></a></li>
+            
+            </ul>
+          
+            
+            <!-- / Login -->
           </div>
         </div>
       </div>
@@ -306,29 +280,7 @@
   </footer>
   <!-- / footer -->
 
-  <!-- Login Modal  nije uključio-->  
-  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">                      
-        <div class="modal-body">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4>Prijava ili registracija</h4>
-          <form class="aa-login-form" action="">
-            <label for="">Korisničko ime ili email adresa<span>*</span></label>
-            <input type="text" placeholder="Korisničko ime ili email adresa">
-            <label for="">Lozinka<span>*</span></label>
-            <input type="password" placeholder="Lozinka">
-            <button class="aa-browse-btn" type="submit">Prijava</button>
-            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Zapamti me </label>
-            <p class="aa-lost-password"><a href="#">Da li ste zaboravili lozinku?</a></p>
-            <div class="aa-register-now">
-              Nemate račun<a href="account.html">Registrujte se!</a>
-            </div>
-          </form>
-        </div>                        
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div>    
+  
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
