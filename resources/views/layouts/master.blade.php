@@ -150,7 +150,7 @@
           <div class="col-md-2">
             <!-- Login -->
             <ul class="nav navbar-nav">
-              <li><a href="{{route('login')}}"><strong>Prijava<strong></a></li>
+              <li><a href="{{route('login')}}"><strong>Admin<strong></a></li>
             
             </ul>
           
@@ -303,6 +303,13 @@
   <script type="text/javascript" src="/js/nouislider.js"></script>
   <!-- Custom js -->
   <script src="/js/custom.js"></script> 
+  <script>
+    var msg = '{{Session::get('alert')}}';
+    var exist = '{{Session::has('alert')}}';
+    if(exist){
+      alert(msg);
+    }
+  </script>
 
   </body>
 </html>
