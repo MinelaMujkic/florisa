@@ -187,7 +187,7 @@
                 </ul>
               </li>
                          
-              <li><a href="blog-archive.html">Blog <span class="caret"></span></a>
+              <li><a href="{{route('blog')}}">Blog <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
                   <li><a href="{{route('blog')}}">Novosti u cvjećarstvu</a></li>                
                 </ul>

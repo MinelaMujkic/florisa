@@ -29,7 +29,7 @@
               <div class="seq-title">
                 {{-- <span data-seq>Uštedi do 40%</span>                 --}}
                 <h2 data-seq>Kućno cvijeće i cvijetni aranžmani </h2>                
-                <p data-seq>Kale su lijepo cvijeće...</p>
+                <p data-seq>za Vas i Vaše najdraže</p>
                 {{-- <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">Naruči </a> --}}
               </div>
             </li>
@@ -1395,18 +1395,18 @@
               <div class="col-md-4 col-sm-4">
                 <div class="aa-latest-blog-single">
                   <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
+                    <a href="#"><img src="https://tropic.ba/wp-content/uploads/2020/04/baner-sajt-orhideja.jpg" style="width:100%" alt="img"></a>  
                       <figcaption class="aa-blog-img-caption">
                       {{-- <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
                       <a href="#"><i class="fa fa-comment-o"></i>20</a> --}}
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
+                      <span href="#"><i class="fa fa-clock-o"></i>05.12.2020.</span>
                     </figcaption>                          
                   </figure>
                   <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                    <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>
+                    <h3 class="aa-blog-title"><a href="#">Savjeti za uzgoj orhideje</a></h3>
+                    <p>Ako je dobro zasađena, njega orhideja je izrazito jednostavna. Ljeti je treba zalijevati više, a zimi manje, a dobro je i povremeno pošpricati je vodom iz raspršivača. Kvaliteta vode je od izuzetne važnosti, pa izbjegavaj vodu iz slavine. Radije je pusti da malo odstoji ili, ako si u mogućnosti, koristite kišnicu. </p> 
+                    <a href="{{route('blog')}}" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>
                   </div>
                 </div>
               </div>
@@ -1414,18 +1414,18 @@
               <div class="col-md-4 col-sm-4">
                 <div class="aa-latest-blog-single">
                   <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-3.jpg" alt="img"></a>  
+                    <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjlTAoMgP7BzfO6FW3_VJP1l1KeW34vPmwRA&usqp=CAU"></a>  
                       <figcaption class="aa-blog-img-caption">
                       {{-- <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
                       <a href="#"><i class="fa fa-comment-o"></i>20</a> --}}
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
+                      <span href="#"><i class="fa fa-clock-o"></i>20.11.2020.</span>
                     </figcaption>                          
                   </figure>
                   <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
-                     <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>         
+                    <h3 class="aa-blog-title"><a href="#">Znate li da kale možete uzgajati i u plasteniku?</a></h3>
+                    <p>Sezona cvjetanja kala je gotovo devet mjeseci. Ako se pazi na pravilan uzgoj, ove otporne biljke godinama daju cvijet. Kala se razmnožava u fazi mirovanja, tako da se mesnati gomolj posadi na dubinu od pet centimetara.</p> 
+                    <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>         
                   </div>
                 </div>
               </div>
@@ -1433,17 +1433,17 @@
               <div class="col-md-4 col-sm-4">
                 <div class="aa-latest-blog-single">
                   <figure class="aa-blog-img">                    
-                    <a href="#"><img src="img/promo-banner-1.jpg" alt="img"></a>  
+                    <a href="#"><img src="https://www.journal.hr/wp-content/uploads/2017/06/cvjetna-galeirja-rl-2.jpg"></a>  
                       <figcaption class="aa-blog-img-caption">
                       {{-- <span href="#"><i class="fa fa-eye"></i>5K</span>
                       <a href="#"><i class="fa fa-thumbs-o-up"></i>426</a>
                       <a href="#"><i class="fa fa-comment-o"></i>20</a> --}}
-                      <span href="#"><i class="fa fa-clock-o"></i>June 26, 2016</span>
+                      <span href="#"><i class="fa fa-clock-o"></i>04.10.2020.</span>
                     </figcaption>                          
                   </figure>
                   <div class="aa-blog-info">
-                    <h3 class="aa-blog-title"><a href="#">Lorem ipsum dolor sit amet</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ad? Autem quos natus nisi aperiam, beatae, fugiat odit vel impedit dicta enim repellendus animi. Expedita quas reprehenderit incidunt, voluptates corporis.</p> 
+                    <h3 class="aa-blog-title"><a href="#">Kako da očuvate vaš buket duže vrijeme</a></h3>
+                    <p>Budite oprezni s buketima cvijeća – odrežite vrpcu, a zatim nježno uklonite celofan ili papir – buket cvijeća ima još jednu vrpcu koja drži cvijeće zajedno – podrežite stabljike prije rezanja vrpce i zatim cvijeće odmah stavite u vazu, poravnajte cvjetove ako je to potrebno.</p> 
                     <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>
                   </div>
                 </div>
@@ -1456,7 +1456,7 @@
   </section>
   <!-- / Latest Blog -->
 
-  <!-- Client Brand -->
+ {{--  <!-- Client Brand -->
   <section id="aa-client-brand">
     <div class="container">
       <div class="row">
@@ -1479,7 +1479,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>--}}
   <!-- / Client Brand -->
 
   <!-- Subscribe section -->
