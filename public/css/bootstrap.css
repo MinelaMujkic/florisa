@@ -55,7 +55,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
-  color:pink;
+  color:#ff6666;
 }
 dfn {
   font-style: italic;
@@ -1116,7 +1116,8 @@ figure {
 }
 img {
   vertical-align: middle;
-  height: 60px;
+  height: 50%;
+  width:50%;
 }
 .img-responsive,
 .thumbnail > img,
