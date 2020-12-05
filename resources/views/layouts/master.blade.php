@@ -153,8 +153,6 @@
               <li><a href="{{route('login')}}"><strong>Admin<strong></a></li>
             
             </ul>
-          
-            
             <!-- / Login -->
           </div>
         </div>

@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Ponuda;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use stdClass;
 
 class FlorisaController extends Controller
 {
@@ -93,5 +96,20 @@ class FlorisaController extends Controller
         //dd($ponuda);
         return view("korisnicki_view.order", compact("ponuda"));
         // return view("korisnicki_view.order", compact("ponuda"));
+    }
+
+    public function pristupiAdminOkruzenju(Request $request)
+    {
+  
+     $email = $request->email;
+     $password = $request->password;
+
+     if($email == "admin@admin.com" && $password == "123456789"){
+        return view("admin_view.adminHome");
+     }else {
+        // return  view("korisnicki_view.home") ->with("alert", "Nemate autorizovan pristup.");
+        return redirect()->back()->with('alert','Nemate autorizovan pristup.');
+    }        
+        
     }
 }

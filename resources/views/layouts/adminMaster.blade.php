@@ -180,9 +180,18 @@
                   <button type="submit"><span class="fa fa-search"></span></button>
                 </form>
               </div>
-              <!-- / search box -->             
+              <!-- / search box --> 
             </div>
           </div>
+
+          <div class="col-md-2">
+            <!-- Login -->
+            <ul class="nav navbar-nav">
+              <li><a href="{{route('home')}}"><strong>Odjavi se<strong></a></li>
+            </ul>
+            <!-- / Login -->
+          </div>
+          
         </div>
       </div>
     </div>
@@ -221,6 +230,9 @@
               </li>
               <li><a href="{{route('kontakt')}}">Kontakt</a></li>
             </ul> --}}
+            
+
+          </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>       

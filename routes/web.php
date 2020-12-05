@@ -33,6 +33,8 @@ Route::get("/order/{id}","App\Http\Controllers\FlorisaController@prikaziOdabranu
 
 Route::get("login","App\Http\Controllers\FlorisaController@login")->name('login');
 
+Route::post("pristupiAdminOkruzenju","App\Http\Controllers\FlorisaController@pristupiAdminOkruzenju")->name("pristupiAdminOkruzenju");
+
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('admin_view.adminHome');
