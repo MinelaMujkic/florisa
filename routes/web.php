@@ -25,7 +25,7 @@ Route::get("kontakt","App\Http\Controllers\FlorisaController@kontakt")->name('ko
 Route::get("cvijetniAranzmani","App\Http\Controllers\FlorisaController@prikazi")->name('cvijetniAranzmani');
 // Route::get("Aranzmani","App\Http\Controllers\FlorisaController@prikazi");
 
-Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@kucnoCvijece")->name('kucnoCvijece');
+Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@prikaziKC")->name('kucnoCvijece');
 
 Route::get("blog","App\Http\Controllers\FlorisaController@blog")->name('blog');
 
