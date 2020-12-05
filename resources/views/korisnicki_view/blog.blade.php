@@ -45,16 +45,16 @@
                         <div class="slika">
                           <img src="https://miss7.24sata.hr/media/img/92/d0/bc08f0ead6d27b45a182.jpeg" style="height: 40%; width:60%;">
                         </div>
-                      </div>>
-                      <div class="col-md-16">
+                      </div>
+                      <div class="col-md-6">
                         <p></p>
-                        <p>Ako je dobro zasađena, njega orhideja je izrazito jednostavna. Ljeti je treba zalijevati više, a zimi manje, a dobro je i povremeno pošpricati je vodom iz raspršivača. 
+                        <p class="blogKlasa">Ako je dobro zasađena, njega orhideja je izrazito jednostavna. Ljeti je treba zalijevati više, a zimi manje, a dobro je i povremeno pošpricati je vodom iz raspršivača. 
                           Kvaliteta vode je od izuzetne važnosti, pa izbjegavaj vodu iz slavine. 
                           Radije je pusti da malo odstoji ili, ako si u mogućnosti, koristite kišnicu. 
                           Povremeno možeš svoju orhideju potopiti u većoj zdjeli vode, ali je tada izuzetno važno dobro je prosušiti. 
                           Tijekom sezone rasta možeš je nahraniti blagom otopinom gnojiva. Zimi drži svoju orhideju na toplom, 
                           a zalijevanje smanji što više, jer je biljka u fazi mirovanja. Nemoj je gnojiti i ostavite je na miru.</p>
-                        <blockquote>
+                        <blockquote class="blogKlasa">
                           Zimi drži svoju orhideju na toplom, 
                           a zalijevanje smanji što više, jer je biljka u fazi mirovanja.
                         </blockquote>
@@ -111,8 +111,8 @@
                                     </figure>
                                     <div class="aa-blog-info">
                                       <h3 class="aa-blog-title"><a href="#">Savjeti za uzgoj orhideje</a></h3>
-                                      <p>Ako je dobro zasađena, njega orhideja je izrazito jednostavna. Ljeti je treba zalijevati više, a zimi manje, a dobro je i povremeno pošpricati je vodom iz raspršivača. Kvaliteta vode je od izuzetne važnosti, pa izbjegavaj vodu iz slavine. Radije je pusti da malo odstoji ili, ako si u mogućnosti, koristite kišnicu. </p> 
-                                      <a href="{{route('blog')}}" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>
+                                      <p class="blogKlasa">Ako je dobro zasađena, njega orhideja je izrazito jednostavna. Ljeti je treba zalijevati više, a zimi manje, a dobro je i povremeno pošpricati je vodom iz raspršivača. Kvaliteta vode je od izuzetne važnosti, pa izbjegavaj vodu iz slavine. Radije je pusti da malo odstoji ili, ako si u mogućnosti, koristite kišnicu. </p> 
+                                      <a href="{{route('blog')}}" class="aa-read-mor-btn">Više... <span class="fa fa-long-arrow-right"></span></a>
                                     </div>
                                   </div>
                                 </div>
@@ -130,8 +130,8 @@
                                     </figure>
                                     <div class="aa-blog-info">
                                       <h3 class="aa-blog-title"><a href="#">Znate li da kale možete uzgajati i u plasteniku?</a></h3>
-                                      <p>Sezona cvjetanja kala je gotovo devet mjeseci. Ako se pazi na pravilan uzgoj, ove otporne biljke godinama daju cvijet. Kala se razmnožava u fazi mirovanja, tako da se mesnati gomolj posadi na dubinu od pet centimetara.</p> 
-                                      <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>         
+                                      <p class="blogKlasa">Sezona cvjetanja kala je gotovo devet mjeseci. Ako se pazi na pravilan uzgoj, ove otporne biljke godinama daju cvijet. Kala se razmnožava u fazi mirovanja, tako da se mesnati gomolj posadi na dubinu od pet centimetara.</p> 
+                                      <a href="#" class="aa-read-mor-btn">Više... <span class="fa fa-long-arrow-right"></span></a>         
                                     </div>
                                   </div>
                                 </div>
@@ -149,8 +149,8 @@
                                     </figure>
                                     <div class="aa-blog-info">
                                       <h3 class="aa-blog-title"><a href="#">Kako da očuvate vaš buket duže vrijeme</a></h3>
-                                      <p>Budite oprezni s buketima cvijeća – odrežite vrpcu, a zatim nježno uklonite celofan ili papir – buket cvijeća ima još jednu vrpcu koja drži cvijeće zajedno – podrežite stabljike prije rezanja vrpce i zatim cvijeće odmah stavite u vazu, poravnajte cvjetove ako je to potrebno.</p> 
-                                      <a href="#" class="aa-read-mor-btn">Pročitaj više <span class="fa fa-long-arrow-right"></span></a>
+                                      <p class="blogKlasa">Budite oprezni s buketima cvijeća – odrežite vrpcu, a zatim nježno uklonite celofan ili papir – buket cvijeća ima još jednu vrpcu koja drži cvijeće zajedno – podrežite stabljike prije rezanja vrpce i zatim cvijeće odmah stavite u vazu, poravnajte cvjetove ako je to potrebno.</p> 
+                                      <a href="#" class="aa-read-mor-btn">Više... <span class="fa fa-long-arrow-right"></span></a>
                                     </div>
                                   </div>
                                 </div>
@@ -260,6 +260,15 @@
          </div>
        </div>
      </div>
+
+     <style>
+
+       .blogKlasa{
+         font-size: 18px;
+         color:#524E4F;
+         font-family: "Raleway", sans-serif;
+       }
+       </style>
    </section>
    <!-- / Blog Archive -->
  

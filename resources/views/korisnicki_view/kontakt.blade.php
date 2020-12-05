@@ -65,7 +65,7 @@
                      <div class="form-group">                        
                        <textarea class="form-control" rows="3" placeholder="Vaša poruka"></textarea>
                      </div>
-                     <button class="aa-secondary-btn">Pošlji</button>
+                     <button class="aa-secondary-btn">Pošalji</button>
                    </form>
                   </div>
                 </div>
