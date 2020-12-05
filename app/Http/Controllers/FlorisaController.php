@@ -31,10 +31,6 @@ class FlorisaController extends Controller
         return view("korisnicki_view.kontakt");
         }
 
-        public function order(){
-            return view("korisnicki_view.order");
-            }
-
         public function login(){
              return view("korisnicki_view.login");
             }
@@ -89,4 +85,13 @@ class FlorisaController extends Controller
     // dd("$kucnoCvijece");
     return view("korisnicki_view/kucno_cvijece", compact("kucnoCvijece"));
     }       
+
+
+    public function prikaziPonudu($id){
+        //dd($id);
+        $ponuda=Ponuda::where('id', "=", "$id")->get();
+        //dd($ponuda);
+        return view("korisnicki_view.order", compact("ponuda"));
+        // return view("korisnicki_view.order", compact("ponuda"));
+    }
 }

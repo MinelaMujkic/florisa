@@ -29,7 +29,7 @@ Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@prikaziKC")->n
 
 Route::get("blog","App\Http\Controllers\FlorisaController@blog")->name('blog');
 
-Route::get("order","App\Http\Controllers\FlorisaController@order")->name('order');
+Route::get("/order/{id}","App\Http\Controllers\FlorisaController@prikaziPonudu")->name("id");
 
 Route::get("login","App\Http\Controllers\FlorisaController@login")->name('login');
 
