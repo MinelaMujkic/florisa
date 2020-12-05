@@ -87,7 +87,7 @@ class FlorisaController extends Controller
     }       
 
 
-    public function prikaziPonudu($id){
+    public function prikaziOdabranuPonudu($id){
         //dd($id);
         $ponuda=Ponuda::where('id', "=", "$id")->get();
         //dd($ponuda);
