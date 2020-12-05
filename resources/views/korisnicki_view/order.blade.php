@@ -82,6 +82,15 @@
 
       <div class="row mt-3 mx-4">
         <div class="col-12">
+          <label class="order-form-label">Komentar/Napomena:</label>
+        </div>
+        <div class="col-12">
+          <input class="order-form-input" placeholder=" ">
+        </div>
+      </div>
+
+      <div class="row mt-3 mx-4">
+        <div class="col-12">
           <div class="form-check">
             <input type="checkbox" class="form-check-input" name="validation" id="validation" value="1">
             <label for="validation" class="form-check-label"><br>Slažem se sa uslovima korištenja</label>
