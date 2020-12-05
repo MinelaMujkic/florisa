@@ -9,7 +9,8 @@
     <!-- Font awesome -->
     <link href="/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="/css/bootstrap.css" rel="stylesheet">   
+    <link href="/css/bootstrap.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
     <!-- SmartMenus jQuery Bootstrap Addon CSS -->
     <link href="/css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
     <!-- Product view slider -->
