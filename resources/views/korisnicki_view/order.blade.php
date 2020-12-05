@@ -61,11 +61,11 @@
           <label class="order-form-label">Adresa</label>
         </div>
         <div class="col-12">
-          <input class="order-form-input" placeholder="Kućna adresa">
+          <input class="order-form-input" placeholder="Ulica br.">
         </div>
-        <div class="col-12 mt-2">
+        {{-- <div class="col-12 mt-2">
           <input class="order-form-input" placeholder="Adresa 2">
-        </div>
+        </div> --}}
         <div class="col-12 col-sm-6 mt-2 pr-sm-2">
           <input class="order-form-input" placeholder="Grad">
         </div>
