@@ -83,5 +83,10 @@ class FlorisaController extends Controller
     return view("korisnicki_view/cvijetni_aranzmani", compact("cvijetniAranzman"));
     }        
 
-
+    public function prikaziKC()
+    {
+      $kucnoCvijece = Ponuda::where([['kategorija_cvijeca', "=", "0"],["status", "=", "1"]])->get();
+    // dd("$kucnoCvijece");
+    return view("korisnicki_view/kucno_cvijece", compact("kucnoCvijece"));
+    }       
 }
