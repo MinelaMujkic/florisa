@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Narudzba;
 use App\Models\Ponuda;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
@@ -111,5 +112,28 @@ class FlorisaController extends Controller
         return redirect()->back()->with('alert','Nemate autorizovan pristup.');
     }        
         
+    }
+
+    public function storeNarudzba(Request $request){
+       
+      
+            Narudzba::create([
+                'ime_narucioca' => $request->ime_narucioca,
+                "prezime_narucioca"=>$request->prezime_narucioca,
+                "id_ponude"=> $request->id_ponude,
+                "ugovorena_cijena_KM"=>$request->ugovorena_cijena_KM,
+                'broj_telefona'=>$request->broj_telefona,
+                "ulica"=>$request->ulica,
+                "grad"=>$request->grad,
+                "postanski_broj"=>$request->postanski_broj,
+                "kanton"=>$request->kanton,
+                "drzava"=>$request->drzava,
+                "komentar_napomena"=>$request->komentar_napomena,
+                "saglasnost_za_uvjete_koristenja"=>$request->saglasnost_za_uvjete_koristenja,
+
+                
+    
+            ]);
+         return view("korisnicki_view.home");
     }
 }

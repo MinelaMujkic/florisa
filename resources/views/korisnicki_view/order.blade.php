@@ -3,34 +3,37 @@
 
 
 
-  <section class="order-form">
-    <div class="container">
+<section class="order-form">
+  <div class="container">
+    <form action="{{route('storeNarudzba')}}" method="POST" enctype="multipart/form-data">
+      @csrf
       <div class="row">
         <div class="col-12">
-          <h1 class="narudzba">Vaša narudžba bit će na Vašoj kućnoj adresi u roku 24h.</h1>
-          <span>Molimo da popunite sva polja</span>
-          <hr class="mt-1">
+        <h1 class="narudzba">Vaša narudžba bit će na Vašoj kućnoj adresi u roku 24h.</h1>
+        <span>Molimo da popunite sva polja</span>
+        <hr class="mt-1">
         </div>
         <div class="col-12">
-
           <div class="row mx-4">
             <div class="col-12 mb-2">
               <label class="order-form-label">Lični podaci</label>
             </div>
             <div class="col-12 col-sm-6">
-              <input class="order-form-input" placeholder="Ime">
+              <input class="order-form-input" name="ime_narucioca" placeholder="Ime">
             </div>
             <div class="col-12 col-sm-6 mt-2 mt-sm-0">
-              <input class="order-form-input" placeholder="Prezime">
+              <input class="order-form-input" name="prezime_narucioca" placeholder="Prezime">
             </div>
           </div>
-
           <div class="row mt-3 mx-4">
             <div class="col-12">
               <label class="order-form-label">Proizvod koji ste naručili</label>
             </div>
             @foreach ($ponuda as $item)
 
+            <div class="col-12" hidden>
+              <h4 class="aa-product-title" name="id_ponude" value="{{$item->id}}"><a href="">{{$item->id}}</a></h4>
+            </div>
 
             <div class="col-12">
               <h4 class="aa-product-title"><a href="">{{$item->naziv}}</a></h4>
@@ -41,122 +44,118 @@
           </div>
         </div>
         <div class="col-12">
-          <span class="aa-product-price">{{$item->cijena_KM}}KM</span>
+          <span class="aa-product-price" name="ugovorena_cijena_KM" value="{{$item->cijena_KM}}">{{$item->cijena_KM}}KM</span>
         </div>
+    </div>
+    @endforeach
+    <div class="row mt-3 mx-4">
+      <div class="col-12">
+        <label class="order-form-label">Broj telefona</label>
       </div>
-      @endforeach
-      <div class="row mt-3 mx-4">
-        <div class="col-12">
-          <label class="order-form-label">Broj telefona</label>
-        </div>
-        <div class="col-12">
-          <input class="order-form-input" placeholder=" ">
-        </div>
+      <div class="col-12">
+        <input class="order-form-input" name='broj_telefona' placeholder=" ">
       </div>
-
-
-
-      <div class="row mt-3 mx-4">
-        <div class="col-12">
-          <label class="order-form-label">Adresa</label>
-        </div>
-        <div class="col-12">
-          <input class="order-form-input" placeholder="Ulica br.">
-        </div>
-        {{-- <div class="col-12 mt-2">
+    </div>
+    <div class="row mt-3 mx-4">
+      <div class="col-12">
+        <label class="order-form-label">Adresa</label>
+      </div>
+      <div class="col-12">
+        <input class="order-form-input" name="ulica" placeholder="Ulica br.">
+      </div>
+      {{-- <div class="col-12 mt-2">
           <input class="order-form-input" placeholder="Adresa 2">
         </div> --}}
-        <div class="col-12 col-sm-6 mt-2 pr-sm-2">
-          <input class="order-form-input" placeholder="Grad">
-        </div>
-        <div class="col-12 col-sm-6 mt-2 pl-sm-0">
-          <input class="order-form-input" placeholder="Kanton">
-        </div>
-        <div class="col-12 col-sm-6 mt-2 pr-sm-2">
-          <input class="order-form-input" placeholder="Poštanski broj">
-        </div>
-        <div class="col-12 col-sm-6 mt-2 pl-sm-0">
-          <input class="order-form-input" placeholder="Država">
-        </div>
+      <div class="col-12 col-sm-6 mt-2 pr-sm-2">
+        <input class="order-form-input" name="grad" placeholder="Grad">
       </div>
-
-      <div class="row mt-3 mx-4">
-        <div class="col-12">
-          <label class="order-form-label">Komentar/Napomena:</label>
-        </div>
-        <div class="col-12">
-          <input class="order-form-input" placeholder=" ">
-        </div>
+      <div class="col-12 col-sm-6 mt-2 pl-sm-0">
+        <input class="order-form-input" name="kanton" placeholder="Kanton">
       </div>
-
-      <div class="row mt-3 mx-4">
-        <div class="col-12">
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" name="validation" id="validation" value="1">
-            <label for="validation" class="form-check-label"><br>Slažem se sa uslovima korištenja</label>
-          </div>
-        </div>
+      <div class="col-12 col-sm-6 mt-2 pr-sm-2">
+        <input class="order-form-input" name="postanski_broj" placeholder="Poštanski broj">
       </div>
-
-      <div class="row mt-3">
-        <div class="col-12">
-          <button type="button" id="btnSubmit" class="btn btn-dark d-block mx-auto btn-submit">Pošalji</button>
-        </div>
+      <div class="col-12 col-sm-6 mt-2 pl-sm-0">
+        <input class="order-form-input" name="drzava" placeholder="Država">
       </div>
-
-    
     </div>
+
+    <div class="row mt-3 mx-4">
+      <div class="col-12">
+        <label class="order-form-label">Komentar/Napomena:</label>
+      </div>
+      <div class="col-12">
+        <input class="order-form-input" name="komentar_napomena" placeholder=" ">
+      </div>
+    </div>
+
+    <div class="row mt-3 mx-4">
+      <div class="col-12">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" name="saglasnost_za_uvjete_koristenja" id="validation" value="1">
+          <label for="validation" class="form-check-label"><br>Slažem se sa uslovima korištenja</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-12">
+        <button type="submit" id="btnSubmit" class="btn btn-dark d-block mx-auto btn-submit">Pošalji</button>
+      </div>
+    </div>
+
+    </form>
   </div>
-</div>
-    
+  
+  {{-- </div>
+  </div> --}}
 
-    <style>
-      .order-form  {
-        color: #4c4c4c;
-        padding: 20px;
-        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
-      }
 
-      .order-form-label {
-        margin: 8px 0 0 0;
-        font-size: 14px;
-        font-weight: bold;
-      }
+  <style>
+    .order-form {
+      color: #4c4c4c;
+      padding: 20px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    }
 
-      .order-form-input {
-        width: 100%;
-        padding: 8px 8px;
-        border-width: 1px !important;
-        border-style: solid !important;
-        border-radius: 3px !important;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        font-style: normal;
-        line-height: 1.2em;
-        background-color: transparent;
-        border-color: #cccccc;
-      }
+    .order-form-label {
+      margin: 8px 0 0 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-      .btn-submit:hover {
-        background-color: #090909 !important;
-      }
+    .order-form-input {
+      width: 100%;
+      padding: 8px 8px;
+      border-width: 1px !important;
+      border-style: solid !important;
+      border-radius: 3px !important;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 1.2em;
+      background-color: transparent;
+      border-color: #cccccc;
+    }
 
-      .proizvod{
-        padding: 0px 15px;
-      }
+    .btn-submit:hover {
+      background-color: #090909 !important;
+    }
 
-      .aa-product-price{
-        padding:0px 30px;
+    .proizvod {
+      padding: 0px 15px;
+    }
 
-      }
+    .aa-product-price {
+      padding: 0px 30px;
 
-      .narudzba{
-        margin-top:20px;
-      }
+    }
 
-      
-    </style>
-  </section>
+    .narudzba {
+      margin-top: 20px;
+    }
+  </style>
+</section>
 
 @endsection
