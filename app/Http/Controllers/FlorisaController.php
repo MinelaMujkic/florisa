@@ -113,9 +113,9 @@ class FlorisaController extends Controller
     }
 
     public function prikaziOdabranuPonuduAdmin($id){
-        //dd($id);
+        // dd($id);
         $ponuda=Ponuda::where('id', "=", "$id")->get();
-        //dd($ponuda);
+        // dd($ponuda);
         return view("admin_view.izmijeni_trenutnu_ponudu", compact("ponuda"));
         // return view("korisnicki_view.order", compact("ponuda"));
     }

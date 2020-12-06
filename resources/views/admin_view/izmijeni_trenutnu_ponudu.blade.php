@@ -32,20 +32,19 @@
     </div>
     <div class="form-group">
         <label>Opis</label>
-        <textarea  name="opis" class="form-control"></textarea>
+        <textarea  name="opis" class="form-control" placeholder="{{$item->opis}} "></textarea>
     </div>
-    <div class="file-field">
-        <div class="btn btn-primary btn-sm float-left">
-            <span>Odaberite sliku</span>
-            <input type="file" name="slika">
-        </div>
+    <div class="form-group">
+      
+            <a class="aa-product-img" href="#"><img class="proizvod" src="{{$item->slika}}"></a>
+        
     </div>
 <br>
 <br>
     <div class="form-group">
         <label>Cijena u KM</label>
         {{-- <input type="number" name="cijena_KM" class="form-control"> --}}
-        <input type="number" placeholder="1.0" step="0.01" min="0"  name="cijena_KM" class="form-control">
+        <input type="number" placeholder="{{$item->cijena_KM}}" step="0.01" min="0"  name="cijena_KM" class="form-control">
     </div>
 
     <p>Status</p>
