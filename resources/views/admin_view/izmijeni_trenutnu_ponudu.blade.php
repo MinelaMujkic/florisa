@@ -9,7 +9,7 @@
      
       @csrf
 
-      <p>Kategorija cvijeca</p>
+      {{-- <p>Kategorija cvijeca</p>
       <div class="form-group">
         <label class="form-check-label form-check-inline">
           <input type="checkbox" name="kategorija_cvijeca" class="form-check-input" value="1"> Cvijetni aranzman
@@ -19,12 +19,16 @@
         <label class="form-check-label form-check-inline">
           <input type="checkbox" name="kategorija_cvijeca" class="form-check-input" value="0"> Kucno cvijece
         </label>
-      </div>
+      </div> --}}
+
+    @foreach ($ponuda as $item)
+        
+   
 
 
       <div class="form-group">
         <label>Naziv</label>
-        <input type="text" name="naziv" class="form-control">
+        <label>{{$item->naziv}} </label>
     </div>
     <div class="form-group">
         <label>Opis</label>
@@ -56,7 +60,7 @@
         </label>
       </div>
 
-
+      @endforeach
       
      <div>
       <button type="submit" class="btn btn-primary">Potvrdi</button>
