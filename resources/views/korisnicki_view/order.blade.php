@@ -36,16 +36,20 @@
             </div>
 
             <div class="col-12">
-              <h4 class="aa-product-title"><a href="">{{$item->naziv}}</a></h4>
+              <h4 class="aa-product-title"><a class="nazivProizvoda" href="">{{$item->naziv}}</a></h4>
             </div>
           </div>
+          
           <div class="col-12">
             <a class="aa-product-img" href="#"><img class="proizvod" src="{{$item->slika}}"></a>
           </div>
-          </div>
+          <div class="row mt-3 mx-4">
           <div class="col-12">
             <input class="order-form-input"  name="ugovorena_cijena_KM" value="{{$item->cijena_KM}}">
           </div>
+        </div>
+        </div>
+          
         </div>
     @endforeach
     <div class="row mt-3 mx-4">
@@ -144,7 +148,8 @@
     }
 
     .proizvod {
-      padding: 0px 15px;
+      padding: 0px 60px;
+      width:35%;
     }
 
     .aa-product-price {
@@ -155,6 +160,8 @@
     .narudzba {
       margin-top: 20px;
     }
+
+    
   </style>
 </section>
 
