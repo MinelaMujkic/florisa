@@ -32,7 +32,7 @@
             @foreach ($ponuda as $item)
 
             <div class="col-12" hidden>
-              <h4 class="aa-product-title" name="id_ponude" value="{{$item->id}}"><a href="">{{$item->id}}</a></h4>
+              <input class="order-form-input" name="id_ponude" value="{{$item->id}}">
             </div>
 
             <div class="col-12">
@@ -42,11 +42,11 @@
           <div class="col-12">
             <a class="aa-product-img" href="#"><img class="proizvod" src="{{$item->slika}}"></a>
           </div>
+          </div>
+          <div class="col-12">
+            <input class="order-form-input"  name="ugovorena_cijena_KM" value="{{$item->cijena_KM}}">
+          </div>
         </div>
-        <div class="col-12">
-          <span class="aa-product-price" name="ugovorena_cijena_KM" value="{{$item->cijena_KM}}">{{$item->cijena_KM}}KM</span>
-        </div>
-    </div>
     @endforeach
     <div class="row mt-3 mx-4">
       <div class="col-12">

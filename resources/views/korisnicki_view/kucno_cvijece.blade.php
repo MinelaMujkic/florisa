@@ -159,7 +159,7 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="aa-product-catg-content">
             <div class="aa-product-catg-head">
-              <div class="aa-product-catg-head-left">
+              {{-- <div class="aa-product-catg-head-left">
                 <form action="" class="aa-sort-form">
                   <label for="">Sort by</label>
                   <select name="">
@@ -177,7 +177,7 @@
                     <option value="3">36</option>
                   </select>
                 </form>
-              </div>
+              </div> --}}
               <div class="aa-product-catg-head-right">
                 <a id="grid-catg" href="#"><span class="fa fa-th"></span></a>
                 <a id="list-catg" href="#"><span class="fa fa-list"></span></a>

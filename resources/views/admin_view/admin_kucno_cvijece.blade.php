@@ -1,159 +1,6 @@
-@extends('layouts.master')
+@extends('layouts.adminMaster')
 @section('content')
-
-
-<!-- menu -->
-{{-- <section id="menu">
-    <div class="container">
-      <div class="menu-area">
-        <!-- Navbar -->
-        <div class="navbar navbar-default" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>          
-          </div>
-          <div class="navbar-collapse collapse">
-            <!-- Left nav -->
-            <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Men <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="#">Casual</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Formal</a></li>
-                  <li><a href="#">Standard</a></li>                                                
-                  <li><a href="#">T-Shirts</a></li>
-                  <li><a href="#">Shirts</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Trousers</a></li>
-                  <li><a href="#">And more.. <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Sleep Wear</a></li>
-                      <li><a href="#">Sandals</a></li>
-                      <li><a href="#">Loafers</a></li>                                      
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#">Women <span class="caret"></span></a>
-                <ul class="dropdown-menu">  
-                  <li><a href="#">Kurta & Kurti</a></li>                                                                
-                  <li><a href="#">Trousers</a></li>              
-                  <li><a href="#">Casual</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Formal</a></li>                
-                  <li><a href="#">Sarees</a></li>
-                  <li><a href="#">Shoes</a></li>
-                  <li><a href="#">And more.. <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Sleep Wear</a></li>
-                      <li><a href="#">Sandals</a></li>
-                      <li><a href="#">Loafers</a></li>
-                      <li><a href="#">And more.. <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                          <li><a href="#">Rings</a></li>
-                          <li><a href="#">Earrings</a></li>
-                          <li><a href="#">Jewellery Sets</a></li>
-                          <li><a href="#">Lockets</a></li>
-                          <li class="disabled"><a class="disabled" href="#">Disabled item</a></li>                       
-                          <li><a href="#">Jeans</a></li>
-                          <li><a href="#">Polo T-Shirts</a></li>
-                          <li><a href="#">SKirts</a></li>
-                          <li><a href="#">Jackets</a></li>
-                          <li><a href="#">Tops</a></li>
-                          <li><a href="#">Make Up</a></li>
-                          <li><a href="#">Hair Care</a></li>
-                          <li><a href="#">Perfumes</a></li>
-                          <li><a href="#">Skin Care</a></li>
-                          <li><a href="#">Hand Bags</a></li>
-                          <li><a href="#">Single Bags</a></li>
-                          <li><a href="#">Travel Bags</a></li>
-                          <li><a href="#">Wallets & Belts</a></li>                        
-                          <li><a href="#">Sunglases</a></li>
-                          <li><a href="#">Nail</a></li>                       
-                        </ul>
-                      </li>                   
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#">Kids <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="#">Casual</a></li>
-                  <li><a href="#">Sports</a></li>
-                  <li><a href="#">Formal</a></li>
-                  <li><a href="#">Standard</a></li>                                                
-                  <li><a href="#">T-Shirts</a></li>
-                  <li><a href="#">Shirts</a></li>
-                  <li><a href="#">Jeans</a></li>
-                  <li><a href="#">Trousers</a></li>
-                  <li><a href="#">And more.. <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Sleep Wear</a></li>
-                      <li><a href="#">Sandals</a></li>
-                      <li><a href="#">Loafers</a></li>                                      
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="#">Sports</a></li>
-             <li><a href="#">Digital <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="#">Camera</a></li>
-                  <li><a href="#">Mobile</a></li>
-                  <li><a href="#">Tablet</a></li>
-                  <li><a href="#">Laptop</a></li>                                                
-                  <li><a href="#">Accesories</a></li>                
-                </ul>
-              </li>
-              <li><a href="#">Furniture</a></li>            
-             <li><a href="blog-archive.html">Blog <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="blog-archive.html">Blog Style 1</a></li>
-                  <li><a href="blog-archive-2.html">Blog Style 2</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>                
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="#">Pages <span class="caret"></span></a>
-                <ul class="dropdown-menu">                
-                  <li><a href="product.html">Shop Page</a></li>
-                  <li><a href="product-detail.html">Shop Single</a></li>                
-                  <li><a href="404.html">404 Page</a></li>                
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div> 
-      </div>
-    </div>
-  </section>
-  <!-- / menu -->  
- 
-  <!-- catg header banner section -->
-  <section id="aa-catg-head-banner">
-   <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img">
-   <div class="aa-catg-head-banner-area">
-     <div class="container">
-      <div class="aa-catg-head-banner-content">
-        <h2>Fashion</h2>
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>         
-          <li class="active">Women</li>
-        </ol>
-      </div>
-     </div>
-   </div>
-  </section> --}}
-  <!-- / catg header banner section -->
-
-  <!-- product category -->
-  <section id="aa-product-category">
+<section id="aa-product-category">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -186,12 +33,12 @@
             <div class="aa-product-catg-body">
               <ul class="aa-product-catg">
                 <!-- start single product item -->
-                @foreach($cvijetniAranzman as $item)
+                @foreach($kucnoCvijece as $item)
 
                 <li>
                   <figure>
                     <a class="aa-product-img" href="#"><img src="{{$item->slika}}"></a>
-                    <a class="aa-add-card-btn" href="{{url("order/{$item->id}")}}"><span class="fa fa-shopping-cart"></span>Naruči</a>
+                    <a class="aa-add-card-btn"href="{{url("ponuda/{$item->id}")}"><span class="fa fa-shopping-cart"></span>Izmijeni</a>
                     <figcaption>
                       <h4 class="aa-product-title"><a href="">{{$item->naziv}}</a></h4>
                       <span class="aa-product-price">{{$item->cijena_KM}}KM</span>
@@ -444,7 +291,7 @@
                     <a href="#" data-toggle2="tooltip" data-placement="top" title="Quick View" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
                   </div>
                 </li>                                          
-              </ul>
+              </ul> --}}
               {{-- <!-- quick view modal -->                  
               <div class="modal fade" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -694,5 +541,6 @@
       </div>
     </div>
   </section> --}}
-  <!-- / Subscribe section -->
+  <!-- / Subscribe section --> 
+
 @endsection

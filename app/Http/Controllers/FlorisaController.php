@@ -81,14 +81,27 @@ class FlorisaController extends Controller
       $cvijetniAranzman = Ponuda::where([['kategorija_cvijeca', "=", "1"],["status", "=", "1"]])->get();
     // dd("$cvijetniAranzman");
     return view("korisnicki_view/cvijetni_aranzmani", compact("cvijetniAranzman"));
-    }        
+    }   
+    public function prikaziAdmin()
+    {
+      $cvijetniAranzman = Ponuda::where([['kategorija_cvijeca', "=", "1"],["status", "=", "1"]])->get();
+    // dd("$cvijetniAranzman");
+    return view("admin_view/admin_cvijetni_aranzmani", compact("cvijetniAranzman"));
+    }       
 
     public function prikaziKC()
     {
       $kucnoCvijece = Ponuda::where([['kategorija_cvijeca', "=", "0"],["status", "=", "1"]])->get();
     // dd("$kucnoCvijece");
     return view("korisnicki_view/kucno_cvijece", compact("kucnoCvijece"));
-    }       
+    }  
+    
+    public function prikaziKCAdmin()
+    {
+      $kucnoCvijece = Ponuda::where([['kategorija_cvijeca', "=", "0"],["status", "=", "1"]])->get();
+    // dd("$kucnoCvijece");
+    return view("admin_view/admin_kucno_cvijece", compact("kucnoCvijece"));
+    }      
 
 
     public function prikaziOdabranuPonudu($id){
@@ -96,6 +109,14 @@ class FlorisaController extends Controller
         $ponuda=Ponuda::where('id', "=", "$id")->get();
         //dd($ponuda);
         return view("korisnicki_view.order", compact("ponuda"));
+        // return view("korisnicki_view.order", compact("ponuda"));
+    }
+
+    public function prikaziOdabranuPonuduAdmin($id){
+        //dd($id);
+        $ponuda=Ponuda::where('id', "=", "$id")->get();
+        //dd($ponuda);
+        return view("admin_view.izmijeni_trenutnu_ponudu", compact("ponuda"));
         // return view("korisnicki_view.order", compact("ponuda"));
     }
 

@@ -39,14 +39,16 @@ Route::post("storeNarudzba","App\Http\Controllers\FlorisaController@storeNarudzb
 Route::prefix('admin')->group(function () {
     Route::get('/', function () {
         return view('admin_view.adminHome');
+
         
     });
 
     Route::get("unesiPonudu","App\Http\Controllers\FlorisaController@unesiPonudu");
 
     Route::post("store","App\Http\Controllers\FlorisaController@store")->name("store");
-
-    
-
+   
+ Route::get("cvijetniAranzmani","App\Http\Controllers\FlorisaController@prikaziAdmin");
+ Route::get("kucnoCvijece","App\Http\Controllers\FlorisaController@prikaziKCAdmin");
+ Route::get("/ponuda/{id}","App\Http\Controllers\FlorisaController@prikaziOdabranuPonuduAdmin")->name("id");
 
 });

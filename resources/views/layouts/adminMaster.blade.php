@@ -216,6 +216,13 @@
             <!-- Left nav -->
             <ul class="nav navbar-nav">
               <li><a href="{{url("admin/unesiPonudu")}}">Unesi novu ponudu</a></li>
+              <li><a href="#">Izmijeni trenutnu ponudu <span class="caret"></span></a>
+                <ul class="dropdown-menu">                
+                  <li><a href="{{url('admin/cvijetniAranzmani')}}">Cvijetni aranžmani</a></li>
+                  <li><a href="{{url('admin/kucnoCvijece')}}">Kućno cvijeće</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Prikazi narudžbe</a></li>
               {{-- <li><a href="#">Shop <span class="caret"></span></a>
                 <ul class="dropdown-menu">                
                   <li><a href="{{route('cvijetniAranzmani')}}">Cvijetni aranžmani</a></li>
