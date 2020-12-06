@@ -40,7 +40,7 @@
                             <li>
                                 <figure>
                                     <a class="aa-product-img" href="#"><img src="{{$item->slika}}"></a>
-                                    <a class="aa-add-card-btn" href="{{url("order/{$item->id}")}}"><span
+                                    <a class="aa-add-card-btn" href="{{url("ponuda/{$item->id}")}}"><span
                                             class="fa fa-shopping-cart"></span>Izmijeni</a>
                                     <figcaption>
                                         <h4 class="aa-product-title"><a href="">{{$item->naziv}}</a></h4>
